@@ -7,7 +7,7 @@
     --fundo-claro: #a6afb4;
     --fundo-escuro: #161616;
 
-    --borda-clara: #38E0F2;
+    --borda-clara: #3d1cf9;
     --borda-escura: #037F8C;
 
     --texto-escuro: #161616;
@@ -128,6 +128,8 @@ a{
     left: 0;
 }
 
+
+
 /* Ajuste para o Corpo de Conteudo */
 
 /* menu responsivo */
@@ -136,3 +138,54 @@ a{
         left: -300px;
     }
 }
+
+/* Menu do Header */
+.nav-menu {
+    padding: 30px 0 0 0 ;
+}
+
+.nav-menu * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav-menu a,
+.nav-menu:focus {
+    display: flex;
+    align-items: center;
+    color: var(--texto-opaco);
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+.nav-menu a i,
+.nav-menu a:focus i {
+    font-size: 22px;
+    padding-right: 10px;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+    text-decoration: none;
+    color: var(--texto-claro);
+}
+
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover>a i {
+    text-decoration: none;
+    color: var(--cor-detalhes);
+}
+
+

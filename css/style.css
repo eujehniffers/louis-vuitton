@@ -5,7 +5,7 @@
 
     --fundo-menu-lateral: #6054a7;
     --fundo-claro: #a6afb4;
-    --fundo-escuro: #101010;
+    --fundo-escuro: #161616;
 
     --borda-clara: #38E0F2;
     --borda-escura: #037F8C;
@@ -99,3 +99,40 @@ a{
     text-decoration: none;
 }
 
+/* Menu mobile */
+.mobile-nav-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+    border: 0;
+    font-size: 26px;
+    transition: all 0.4s;
+    background: var(--cor-detalhes);
+    color: var(--texto-claro);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+
+.mobile-nav-active {
+    overflow: hidden;
+}
+
+.mobile-nav-active #header {
+    left: 0;
+}
+
+/* Ajuste para o Corpo de Conteudo */
+
+/* menu responsivo */
+@media  (max-width:1199px) {
+    #header{
+        left: -300px;
+    }
+}

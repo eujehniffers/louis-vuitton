@@ -22,7 +22,6 @@
    * Função de Adição de Eventos (on)
    * Função espera que um evento ocorra e depois responde a ele  */
   
-  
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
     if (selectEl) {
@@ -34,9 +33,6 @@
     }
   }
 
-
-
-
   // Ativar Botao Menu no modo Mobile
   
   on('click','.mobile-nav-toggle', function() {
@@ -45,5 +41,18 @@
      this.classList.toggle('bi-x')
 
     })
+    //efeito de digitação
+ const typed = select(".typed");
+    if (typed) {
+
+      let typed_strings = typed.getAttribute('data-typed-items')
+      typed_strings = typed_strings.split(',')
+
+      new Typed('.typed', {
+        strings: typed_strings,
+          
+      })
+
+  }
 
 })()

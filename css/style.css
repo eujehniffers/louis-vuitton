@@ -3,7 +3,7 @@
 
     --background-color: rgba(5, 13, 24, 0.555);
 
-    --fundo-menu-lateral: #6054a7;
+    --fundo-menu-lateral: #b9a0de;
     --fundo-claro: #a6afb4;
     --fundo-escuro: #161616;
 
@@ -253,3 +253,36 @@ a{
     padding-right: 30px;
 }
 
+/* Secões e Títulos */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    /* clara */
+    /* background:var(--section-clara); */
+    background: #9f7667;
+}
+
+.section-bg {
+    /* escura */
+    /* background:var(--section-escura); */
+    background: #57362b;
+    color: var(--texto-claro);
+}
+
+/* Estrutura do Título Seção */
+.section-title {
+    padding-bottom: 30px;
+}
+
+/* título H2 */
+.section-title H2 {
+    color: var(--texto-escuro);
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title h2:after {
+    
+}

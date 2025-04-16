@@ -1,13 +1,39 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Estilos Fonts */
+/* 
+
+ Winky Rough
+  font-family: "Winky Rough", sans-serif;
+
+Poppins:
+  font-family: "Poppins", sans-serif;
+
+Montserrat:
+  font-family: "Montserrat", sans-serif;
+
+
+
+
+
+
+*/
+
+
+
+
+
 /* variavel para as cores */
 :root {
 
     --background-color: rgba(5, 13, 24, 0.555);
 
-    --fundo-menu-lateral: #b9a0de;
+    --fundo-menu-lateral: #000000;
     --fundo-claro: #a6afb4;
     --fundo-escuro: #161616;
 
-    --borda-clara: #3d1cf9;
+    --borda-clara: #FFFFFF;
     --borda-escura: #037F8C;
 
     --texto-escuro: #161616;
@@ -61,7 +87,7 @@ body {
     padding: 0;
     font-weight: 600;
     text-align: center;
-    color: wheat;
+    color: white;
 }
 
 /* Redes Sociais */
@@ -281,8 +307,33 @@ section {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
+    font-family: "Poppins", sans-serif;
 }
 
 .section-title h2:after {
-    
+    content: "";
+    position: absolute;
+    background: #7b5347;
+    width: 50px;
+    height: 3px;
+    display: block;
+    bottom: 0;
+    left: 0;
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+/* Sobre */
+.sobre .content h3{
+    color:#4a2e24;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: "Winky Rough", sans-serif;
+}
+
+.sobre .content ul {
+    list-style: none;
+    padding: 0;
 }
